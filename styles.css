@@ -1,0 +1,91 @@
+body {
+	font-family: Forum, serif;
+	margin: 0;
+	padding: 0;
+}
+
+.hero {
+	/* open up the dev tools on the bottom side, setting height: 90vh
+       causes the other hero content to overflow, so we set minHeight and inline-block
+       DOUBT: why to set inline-block though? stuff breaks if this isn't specified */
+	min-height: 90vh;
+	display: inline-block;
+
+	background-color: #f08e80;
+	color: white;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 32px;
+}
+
+.links a {
+	text-decoration: none;
+	color: white;
+	margin-right: 16px;
+	font-size: 1.2rem;
+}
+
+.navbar p {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.navbar .contact {
+	color: #f08e80;
+	background-color: white;
+	text-decoration: none;
+	padding: 16px 24px;
+}
+
+.navbar .contact:hover {
+	opacity: 0.8;
+}
+
+.hero-content {
+	/* notice using % for the padding, makes stuff kinda responsive */
+	padding: 0 15%;
+}
+
+.tagline {
+	font-size: 2.8rem;
+	letter-spacing: 2.5px;
+	padding: 20px 0;
+	margin: 0;
+}
+
+.two-col {
+	font-size: 1.5rem;
+}
+
+/* to make the 2 column layout, we could've used this */
+/* .two-col p {
+	width: 48%;
+	display: inline-block;
+} */
+
+.two-col p {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.two-col .specialities {
+	width: 50%;
+	float: left;
+	/* border-box is important */
+	box-sizing: border-box;
+	padding: 0;
+	list-style-type: none;
+}
+
+.two-col .specialities li {
+	width: 50%;
+	float: left;
+	font-size: 1.4rem;
+	margin: 4px 0;
+}
