@@ -5,12 +5,8 @@ body {
 }
 
 .hero {
-	/* open up the dev tools on the bottom side, setting height: 90vh
-       causes the other hero content to overflow, so we set minHeight and inline-block
-       DOUBT: why to set inline-block though? stuff breaks if this isn't specified */
 	min-height: 90vh;
 	display: inline-block;
-
 	background-color: #f08e80;
 	color: white;
 }
@@ -47,7 +43,6 @@ body {
 }
 
 .hero-content {
-	/* notice using % for the padding, makes stuff kinda responsive */
 	padding: 0 15%;
 }
 
@@ -62,13 +57,7 @@ body {
 	font-size: 1.5rem;
 }
 
-/* to make the 2 column layout, we could've used this */
-/* .two-col p {
-	width: 48%;
-	display: inline-block;
-} */
-
-.two-col p {
+.two-col > p {
 	width: 50%;
 	float: left;
 	box-sizing: border-box;
@@ -77,7 +66,6 @@ body {
 .two-col .specialities {
 	width: 50%;
 	float: left;
-	/* border-box is important */
 	box-sizing: border-box;
 	padding: 0;
 	list-style-type: none;
@@ -88,4 +76,39 @@ body {
 	float: left;
 	font-size: 1.4rem;
 	margin: 4px 0;
+}
+
+.blog-section {
+	background-color: white;
+	padding: 64px 0;
+}
+
+.blog-content {
+	padding: 0 15%;
+}
+
+.two-col .blog-posts {
+	width: 50%;
+	float: left;
+}
+
+.blog-posts {
+	margin-top: 4px;
+}
+
+.blog-title {
+	font-size: 1.3rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.blog-text {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.blog-date {
+	font-size: 0.8rem;
+	color: grey;
+	margin: 6px 0 25px 0;
 }
