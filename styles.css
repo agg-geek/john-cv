@@ -49,7 +49,7 @@ body {
 .tagline {
 	font-size: 2.8rem;
 	letter-spacing: 2.5px;
-	padding: 20px 0;
+	padding: 48px 0;
 	margin: 0;
 }
 
@@ -147,4 +147,25 @@ body {
 	font-size: 0.8rem;
 	color: grey;
 	margin: 6px 0 25px 0;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 32px 0;
+}
+
+.footer-content {
+	text-align: center;
+}
+
+footer img {
+	width: 2rem;
+	height: 2rem;
+	margin: 0 8px;
+}
+
+footer p {
+	margin: 0;
+	margin-top: 8px;
 }
